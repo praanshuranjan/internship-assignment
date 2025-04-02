@@ -6,7 +6,7 @@ export const FooterBottom = () => {
       <div className="h-px bg-[rgba(255,255,255,0.1)] mb-10" />
       <div className="flex justify-between items-center max-sm:flex-col max-sm:gap-5 max-sm:text-center">
         <div className="text-[rgba(255,255,255,0.5)] text-base">
-          2025 @ Arun  All rights reserved.
+          2025 @ All rights reserved.
         </div>
         <div>
           <svg
