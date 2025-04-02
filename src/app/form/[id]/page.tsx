@@ -153,7 +153,7 @@ export default function JobApplicationForm() {
                         required
                         value={formData.fullName}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4640DE] focus:border-transparent"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4640DE] focus:border-transparent text-black"
                         placeholder="John Doe"
                       />
                     </div>
@@ -169,7 +169,7 @@ export default function JobApplicationForm() {
                         required
                         value={formData.email}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4640DE] focus:border-transparent"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4640DE] focus:border-transparent text-black"
                         placeholder="john.doe@example.com"
                       />
                     </div>
@@ -185,7 +185,7 @@ export default function JobApplicationForm() {
                         required
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4640DE] focus:border-transparent"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4640DE] focus:border-transparent text-black"
                         placeholder="+1 (555) 123-4567"
                       />
                     </div>
@@ -201,7 +201,7 @@ export default function JobApplicationForm() {
                         required
                         value={formData.position || jobTitle?.replace(/%20/g, " ")}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4640DE] focus:border-transparent"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4640DE] focus:border-transparent text-black"
                         placeholder="Software Engineer"
                       />
                     </div>
@@ -226,7 +226,7 @@ export default function JobApplicationForm() {
                         required
                         value={formData.experience}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4640DE] focus:border-transparent"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4640DE] focus:border-transparent text-black"
                       >
                         <option value="">Select experience level</option>
                         <option value="0-1">0-1 years</option>
@@ -247,7 +247,7 @@ export default function JobApplicationForm() {
                         required
                         value={formData.education}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4640DE] focus:border-transparent"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4640DE] focus:border-transparent text-black"
                       >
                         <option value="">Select education</option>
                         <option value="High School">High School</option>
@@ -268,7 +268,7 @@ export default function JobApplicationForm() {
                         name="linkedin"
                         value={formData.linkedin}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4640DE] focus:border-transparent"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4640DE] focus:border-transparent text-black"
                         placeholder="https://linkedin.com/in/username"
                       />
                     </div>
@@ -283,7 +283,7 @@ export default function JobApplicationForm() {
                         name="portfolio"
                         value={formData.portfolio}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4640DE] focus:border-transparent"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4640DE] focus:border-transparent text-black"
                         placeholder="https://yourwebsite.com"
                       />
                     </div>
