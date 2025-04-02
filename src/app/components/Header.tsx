@@ -1,10 +1,11 @@
 import { Menu } from "lucide-react";
+import Link from "next/link";
 
 export const Header = () => {
   return (
     <header className="flex w-full justify-between items-center h-[78px] px-[124px] max-md:px-10 max-sm:px-5">
       <div className="flex justify-center items-center gap-12">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 hover:opacity-90 transition-opacity duration-200 cursor-pointer">
           <div>
             <svg
               width="32"
@@ -55,28 +56,34 @@ export const Header = () => {
         <nav className="flex justify-center items-center gap-4 max-md:hidden">
           <a
             href="#"
-            className="text-[#515B6F] text-base font-medium leading-[25.6px]"
+            className="text-[#515B6F] text-base font-medium leading-[25.6px] hover:text-[#4640DE] transition-colors duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#4640DE] after:transition-all after:duration-300 hover:after:w-full"
           >
             Find Jobs
           </a>
           <a
             href="#"
-            className="text-[#515B6F] text-base font-medium leading-[25.6px]"
+            className="text-[#515B6F] text-base font-medium leading-[25.6px] hover:text-[#4640DE] transition-colors duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#4640DE] after:transition-all after:duration-300 hover:after:w-full"
           >
             Browse Companies
           </a>
+          <Link
+            href="/myapplications"
+            className="text-[#515B6F] text-base font-medium leading-[25.6px] hover:text-[#4640DE] transition-colors duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#4640DE] after:transition-all after:duration-300 hover:after:w-full"
+          >
+            Browse Applications
+          </Link>
         </nav>
       </div>
       <div className="flex items-center gap-4 max-sm:hidden">
-        <button className="text-[#4640DE] text-base font-bold px-6 py-3">
+        <button className="text-[#4640DE] text-base font-bold px-6 py-3 hover:bg-[#F0EFFB] rounded transition-all duration-200">
           Login
         </button>
         <div className="w-px h-12 bg-[#D6DDEB]" />
-        <button className="bg-[#4640DE] text-white text-base font-bold px-6 py-3">
+        <button className="bg-[#4640DE] text-white text-base font-bold px-6 py-3 rounded hover:bg-[#322FB5] hover:shadow-md transition-all duration-200">
           Sign Up
         </button>
       </div>
-      <button className="hidden max-sm:block">
+      <button className="hidden max-sm:block hover:bg-gray-100 p-2 rounded-full transition-colors duration-200">
         <Menu className="h-6 w-6 text-[#25324B]" />
       </button>
     </header>
